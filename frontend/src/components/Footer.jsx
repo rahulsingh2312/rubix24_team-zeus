@@ -3,7 +3,7 @@ import {FaFacebook, FaGithub, FaInstagram, FaTwitter, FaTwitch} from 'react-icon
 
 const Footer = () => {
     return (
-        <div className="w-full bg-[#EEF4FF] py-8 md:px-2 px-10">
+        <div className="w-full bg-white py-8 md:px-2 px-10">
             <div className="max-w-[1280px] mx-auto grid grid-cols-2 md:grid-cols-6 border-b-2 border-gray-600 py-8">
                 <img className="col-span-2 w-[20rem]" src="https://images.squarespace-cdn.com/content/v1/598c1a6b46c3c4a7b18a8908/f3c4acee-fe02-442b-b1e5-bcf2eabd6c34/Chatbot_Icon.png" alt="" />
                 <div className="mt-6">

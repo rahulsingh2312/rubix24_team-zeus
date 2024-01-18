@@ -7,7 +7,7 @@ import { sliderSettings } from '../data/sliderSettings'
 
 export default function Slider() {
   return (
-    <div className='relative'>
+    <div className='relative my-10'>
         <Swiper {...sliderSettings}>
             <SliderButtons />
             {

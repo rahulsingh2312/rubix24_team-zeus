@@ -12,7 +12,7 @@ import serviceDetails from '../data/serviceDetails';
 export default function Services() {
     return (
         <div>
-            <div className='relative mx-auto flex flex-col items-center lg:flex-row lg:gap-20 justify-center my-10'>
+            <div className='relative mx-auto flex flex-col items-center lg:flex-row lg:gap-20 justify-center my-20'>
                 <header className='lg:hidden block text-center pb-10'>
                     <h2 className='text-[13px] tracking-[1px] font-bold m-0 text-blue-600 uppercase'>Services</h2>
                     <p className='mt-[10px] mx-0 mb-0 p-0 sm:text-[38px] sm:leading-[42px] font-bold text-black text-[28px] leading-[32px]'>Our Services</p>
