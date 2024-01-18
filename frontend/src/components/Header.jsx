@@ -15,7 +15,7 @@ const Header = () => {
         /> */}
         <h1
           className={`text-2xl font-bold ${
-            location.pathname === "/login" ? "text-black" : "text-white"
+            location.pathname !== "/" ? "text-black" : "text-white"
           }`}
         >
           TravelBuddy
@@ -23,7 +23,7 @@ const Header = () => {
       </a>
       <div
         className={`pr-5 hidden lg:flex gap-5 items-center ${
-          location.pathname === "/login" ? "text-black" : "text-white"
+          location.pathname !== "/" ? "text-black" : "text-white"
         }`}
       >
         <a href="#">Home</a>
