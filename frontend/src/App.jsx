@@ -1,10 +1,11 @@
 import CarouselSection from "./components/CarouselSection";
 import Header from "./components/Header";
-import { useState } from "react";
+import Hero from "./components/Hero";
 function App() {
   return (
     <div className="">
       <Header />
+      <Hero />
       <CarouselSection />
     </div>
   );
