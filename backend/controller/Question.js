@@ -31,15 +31,22 @@ async function listQuestion(req, res) {
     }
 
     let { limit, page } = req.query;
-    let QuestionList = await QuestionModel.find(filter)
-      .limit((limit = 0))
-      .skip((page - 1) * limit);
-    let count = await QuestionModel.countDocuments();
-    let totalPages = Math.ceil(count / limit);
-    let Question = { totalPages, data: QuestionList };
-    if (Question) {
+    let QuestionList = await QuestionModel.find(filter).populate({
+      path: "answer_id",
+    });
+    // .limit((limit = 0))
+    // .skip((page - 1) * limit);
+    // .populate({
+    //   path: "answer_id",
+    //   model: "Answer",
+    // select: ["answerString"],
+    // });
+    // let count = await QuestionModel.countDocuments();
+    // let totalPages = Math.ceil(count / limit);
+    // let Question = { totalPages, data: QuestionList };
+    if (QuestionList) {
       res.json({
-        res: Question,
+        res: QuestionList,
       });
     }
   } catch (e) {
