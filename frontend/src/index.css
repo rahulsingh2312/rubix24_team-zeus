@@ -2,10 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 .bgimg{
-    background-image: url('https://images.unsplash.com/photo-1614882968722-286dbf647c61?q=80&w=2038&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-image: url('https://images.unsplash.com/photo-1703952499855-8e1376d6e6a8?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    
-  
+  }
+
+  .hero-text{
+    filter: drop-shadow(0 0 1.5rem #000000);
+  }
+  .textgrad{
+    background: linear-gradient(90deg, #F5F29D 0%, #FFA7EC 50.5%, #FFA7A7 98%);
+    background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
   }
