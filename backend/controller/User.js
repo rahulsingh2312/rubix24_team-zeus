@@ -3,7 +3,7 @@ const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 
 async function registerUser(req, res) {
-  const { username, email, password, DOB } = req.body;
+  const { username, email, password } = req.body;
   const testobject = req.body;
   console.log(`This is ${testobject}`);
   if (!username || !email || !password) {
@@ -22,7 +22,6 @@ async function registerUser(req, res) {
     username,
     email,
     password: hashedPassword,
-    DOB,
   });
 
   if (newUser) {
