@@ -1,14 +1,24 @@
-import CarouselSection from "./components/CarouselSection";
-import Header from "./components/Header";
-import Hero from "./components/Hero";
-import Why from "./components/Why";
+import Home from "./pages/Home";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import MainLayout from "./layouts/MainLayout";
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <MainLayout />,
+    children: [
+      {
+        path: "/",
+        element: <Home />
+      },
+    ],
+  },
+]);
+
 function App() {
   return (
-    <div className="">
-      <Header />
-      <Hero />
-      <Why />
-      <CarouselSection />
+    <div>
+      <RouterProvider router={router} />
     </div>
   );
 }
