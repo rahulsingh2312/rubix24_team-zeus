@@ -9,7 +9,7 @@ import {
 
 const Footer = () => {
   return (
-    <div className="w-full bg-[#ebf0fa] py-8 md:px-2 px-10">
+    <div className="w-full bg-[#ffffff] py-8 md:px-2 px-10">
       <div className="max-w-[1280px] mx-auto grid grid-cols-2 md:grid-cols-6 border-b-2 border-gray-600 py-8">
         <img
           className="col-span-2 w-[20rem]"

@@ -3,6 +3,7 @@ import Hero from '../components/Hero';
 import Why from '../components/Why';
 import CarouselSection from '../components/CarouselSection';
 import Services from '../components/Services';
+import StartYourJourney from '../components/StartYourJourney';
 
 function Home() {
   return (
@@ -11,6 +12,7 @@ function Home() {
         <Why />
         <CarouselSection />
         <Services />
+        <StartYourJourney />
     </div>
   )
 }
