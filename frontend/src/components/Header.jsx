@@ -33,7 +33,7 @@ const Header = () => {
       <ul
         className={
           toggle
-            ? "pt-24 pb-8 absolute top-0 bg-white shadow-sm z-20 w-full px-8 lg:hidden flex flex-col items-center gap-5"
+            ? "pt-24 pb-8 absolute left-0 top-0 bg-white shadow-sm z-20 w-full px-8 lg:hidden flex flex-col items-center gap-5"
             : "hidden"
         }
       >
