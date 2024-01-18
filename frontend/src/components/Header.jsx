@@ -6,15 +6,17 @@ const Header = () => {
 
   const handleClick = () => setToggle(!toggle);
   return (
-    <div className="relative flex justify-between px-10 py-2 items-center w-full">
-      <a className="z-40 flex gap-6 items-center" href="/">
-        <img className="pl-10 w-24 mt-2" src="https://images.squarespace-cdn.com/content/v1/598c1a6b46c3c4a7b18a8908/f3c4acee-fe02-442b-b1e5-bcf2eabd6c34/Chatbot_Icon.png" alt="logo" />
-        <h1 className="text-3xl">TravelBuddy</h1>
+    <div className="relative flex justify-between px-10 py-2 items-center w-full bg-transparent">
+      <a className="z-40 flex gap-2 items-center" href="/">
+        <img
+          className="pl-10 w-24 mt-2"
+          src="https://images.squarespace-cdn.com/content/v1/598c1a6b46c3c4a7b18a8908/f3c4acee-fe02-442b-b1e5-bcf2eabd6c34/Chatbot_Icon.png"
+          alt="logo"
+        />
+        <h1 className="text-2xl font-bold text-gray-900">TravelBuddy</h1>
       </a>
-      <div className="pr-5 hidden lg:flex gap-5 items-center">
-        <a href="#">
-          Home
-        </a>
+      <div className="pr-5 hidden lg:flex gap-5 items-center text-black">
+        <a href="#">Home</a>
         <a href="#">
           <button className="px-8 py-2 rounded-3xl bg-blue-600 text-white">
             Sign in
@@ -36,9 +38,7 @@ const Header = () => {
         }
       >
         <div className="flex flex-col items-center gap-5 my-2">
-          <a href="#">
-            Home
-          </a>
+          <a href="#">Home</a>
           <a href="#">
             <button className="w-full px-6 py-1.5 rounded-3xl bg-blue-600 text-white">
               Sign in
