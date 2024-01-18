@@ -1,11 +1,11 @@
-import pic1 from "../assets/Home/building1.svg"
-import pic2 from "../assets/Home/building2.svg"
-import pic3 from "../assets/Home/building3.svg"
-import pic4 from "../assets/Home/building4.svg"
-import pic5 from "../assets/Home/building5.svg"
-import pic6 from "../assets/Home/building6.svg"
+import pic1 from "../assets/Home/building1.svg";
+import pic2 from "../assets/Home/building2.svg";
+import pic3 from "../assets/Home/building3.svg";
+import pic4 from "../assets/Home/building4.svg";
+import pic5 from "../assets/Home/building5.svg";
+import pic6 from "../assets/Home/building6.svg";
 
-import plane from "../assets/Home/plane.svg"
+import plane from "../assets/Home/plane.svg";
 
 export default function StartYourJourney() {
   return (
@@ -24,16 +24,20 @@ export default function StartYourJourney() {
           </div>
           <p className="text-xl text-[#959595] font-medium">or</p>
           <div className="flex justify-center items-center gap-5">
-            <a href="/dashboard">
+            <a href="/register">
               <button className="flex justify-center items-center px-6 py-3 rounded-3xl text-white bg-blue-600 text-xl">
-                Get Started
+                Register
               </button>
             </a>
           </div>
         </div>
       </div>
       <div className="relative">
-        <img className="absolute -top-20 lg:left-[37rem] md:left-[22rem] sm:left-[15rem] left-[12rem]" src={plane} alt="" />
+        <img
+          className="absolute -top-20 lg:left-[37rem] md:left-[22rem] sm:left-[15rem] left-[12rem]"
+          src={plane}
+          alt=""
+        />
         <div className="flex items-baseline overflow-hidden">
           <img src={pic1} alt="" />
           <img src={pic2} alt="" />

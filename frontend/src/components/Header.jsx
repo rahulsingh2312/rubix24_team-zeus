@@ -26,10 +26,10 @@ const Header = () => {
           location.pathname !== "/" ? "text-black" : "text-white"
         }`}
       >
-        <a href="#">Home</a>
-        <a href="#">
-          <button className="px-8 py-2 rounded-3xl bg-blue-600 text-white">
-            Sign in
+        <a href="/login">Log in</a>
+        <a href="/register">
+          <button className="w-full px-6 py-1.5 rounded-3xl bg-blue-600 text-white">
+            Register
           </button>
         </a>
       </div>
@@ -49,9 +49,10 @@ const Header = () => {
       >
         <div className="flex flex-col items-center gap-5 my-2">
           <a href="#">Home</a>
-          <a href="#">
+          <a href="/login">Log in</a>
+          <a href="/register">
             <button className="w-full px-6 py-1.5 rounded-3xl bg-blue-600 text-white">
-              Sign in
+              Register
             </button>
           </a>
         </div>

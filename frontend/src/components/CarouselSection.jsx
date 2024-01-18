@@ -7,7 +7,10 @@ import { sliderSettings } from "../data/sliderSettings";
 
 export default function Slider() {
   return (
-    <div className="relative mt-32">
+    <div className="relative mt-20">
+      <div className="text-center text-3xl font-bold mb-10">
+        Explore Lowest Prices
+      </div>
       <Swiper {...sliderSettings}>
         <SliderButtons />
         {sliderDetails.map((card, i) => (
