@@ -16,6 +16,7 @@ const QuestionRouter = require("./routes/Question");
 const AnswerRouter = require("./routes/Answer");
 const UpvoteRouter = require("./routes/UpVote");
 const DownvoteRouter = require("./routes/DownVote");
+const AdvisoryRouter = require("./routes/Advisory");
 const port = process.env.PORT || 5000;
 
 app.get("/", (req, res) => {
@@ -26,6 +27,7 @@ app.use("/Question", QuestionRouter);
 app.use("/Answer", AnswerRouter);
 app.use("/upvote", UpvoteRouter);
 app.use("/downvote", DownvoteRouter);
+app.use("/Advisory", AdvisoryRouter);
 app.listen(port, () => {
   console.log("server is live");
 });
