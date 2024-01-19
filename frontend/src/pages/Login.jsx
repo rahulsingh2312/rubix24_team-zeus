@@ -21,7 +21,7 @@ function Login() {
       .post("http://localhost:5555/User/login", data)
       .then(() => {
         setLoading(false);
-        navigate("/dashboard");
+        navigate("/forum");
       })
       .catch((error) => {
         setLoading(false);
