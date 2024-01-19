@@ -65,7 +65,7 @@ async function userLogin(req, res) {
     res
       .status(200)
       .cookie("accesstoken", accessToken, {
-        httpOnly: true,
+        httpOnly: false,
       })
       .json({ msg: "login succesful" });
   } else {

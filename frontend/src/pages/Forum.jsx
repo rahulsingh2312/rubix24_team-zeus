@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { FaSearch } from "react-icons/fa";
-import Header from "../components/Header";
+import DashboardHeader from "../components/DashboardHeader";
 import forumData from "../data/forumData";
 const Forum = () => {
   const handleAddQuestion = () => {
@@ -35,8 +35,7 @@ const Forum = () => {
 
   return (
     <>
-      <Header />
-      <div className="gradient-forum"></div>
+      <DashboardHeader />
       <div className="flex-row text-center items-center justify-center mt-16">
         <div>
           <div className="text-5xl font-bold max-sm:text-3xl">

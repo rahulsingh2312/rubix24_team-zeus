@@ -23,7 +23,7 @@ function Register() {
       .post("http://localhost:5555/User/register", data)
       .then(() => {
         setLoading(false);
-        navigate("/dashboard");
+        navigate("/forum");
       })
       .catch((error) => {
         setLoading(false);
