@@ -36,6 +36,7 @@ const Forum = () => {
   return (
     <>
       <Header />
+      <div className="gradient-forum"></div>
       <div className="flex-row text-center items-center justify-center mt-16">
         <div>
           <div className="text-5xl font-bold max-sm:text-3xl">
@@ -50,7 +51,7 @@ const Forum = () => {
         <div className="flex mt-4 items-center justify-center">
           <input
             type="search"
-            className={`border border-gray-800 rounded-full px-4 py-2 mb-10 ${
+            className={`border border-gray-800 rounded-full bg-transparent px-4 py-2 mb-10 ${
               isClicked ? "w-6/12 transition-all" : "w-40"
             }`}
             placeholder="Search Queries"
