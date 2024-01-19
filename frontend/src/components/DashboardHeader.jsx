@@ -26,8 +26,8 @@ const Header = () => {
           location.pathname !== "/" ? "text-black" : "text-white"
         }`}
       >
-        <a href="/logout">
-          <button className="w-full px-6 py-1.5 rounded-3xl bg-blue-600 text-white">
+        <a href="/">
+          <button className="w-full px-6 py-1.5 rounded-3xl bg-red-600 text-white">
             Logout
           </button>
         </a>
@@ -47,8 +47,8 @@ const Header = () => {
         }
       >
         <div className="flex flex-col items-center gap-5 my-2">
-          <a href="/logout">
-            <button className="w-full px-6 py-1.5 rounded-3xl bg-blue-600 text-white">
+          <a href="/">
+            <button className="w-full px-6 py-1.5 rounded-3xl bg-red-600 text-white">
               Logout
             </button>
           </a>

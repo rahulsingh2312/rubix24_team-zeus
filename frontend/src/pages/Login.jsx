@@ -21,8 +21,7 @@ function Login() {
       .post("http://localhost:5555/User/login", data, { withCredentials: true })
       .then((data) => {
         setLoading(false);
-        navigate("/dashboard");
-        console.log(data);
+        navigate("/forum");
       })
       .catch((error) => {
         setLoading(false);
