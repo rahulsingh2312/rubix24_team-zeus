@@ -38,7 +38,7 @@ function Login() {
             </span>
             TravelBuddy
           </div>
-          {loading ? <Spinner /> : ''}
+          {loading ? <Spinner /> : ""}
           <div className="form">
             <label className="text-gray-800 text-sm font-semibold">Email</label>
             <input
@@ -79,6 +79,12 @@ function Login() {
             />
             Continue with Google
           </div>
+        </div>
+        <div className="text-center mx-auto text-sm mt-4">
+          <a href="/register">
+            Don't Have an Account?{" "}
+            <span className="text-blue-700">Register</span>{" "}
+          </a>
         </div>
       </div>
     </div>

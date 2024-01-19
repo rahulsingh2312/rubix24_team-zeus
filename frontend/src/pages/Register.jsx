@@ -33,8 +33,13 @@ function Register() {
     <div className="flex items-center justify-center p-8">
       <div className="w-[400px] bg-white border border-gray-300 shadow-2xl rounded-lg h-fit p-4">
         <div className="border-gray-300 px-4 py-4">
-          <div className="text-2xl font-semibold mb-6">Create New Account</div>
-          {loading ? <Spinner /> : ''}
+          <div className="text-2xl font-semibold mb-6">
+            Create New Account{" "}
+            <span className="font-normal text-gray-500">
+              To unlock best features
+            </span>
+          </div>
+          {loading ? <Spinner /> : ""}
           <div className="form">
             <label className="text-gray-800 text-sm font-semibold">Email</label>
             <input
@@ -70,7 +75,6 @@ function Register() {
             />
             <div className="text-xs mt-1 cursor-pointer">Forgot Password?</div>
             <button
-            
               className="w-full text-center bg-gray-900 cursor-pointer font-medium hover:bg-slate-600 text-white rounded-full px-4 py-3 mt-4 text-sm"
               onClick={handleSubmit}
             >
@@ -88,6 +92,12 @@ function Register() {
             />
             Continue with Google
           </div>
+        </div>
+        <div className="text-center mx-auto text-sm mt-4">
+          <a href="/login">
+            Already Have an Account?{" "}
+            <span className="text-blue-700">Log in</span>{" "}
+          </a>
         </div>
       </div>
     </div>
