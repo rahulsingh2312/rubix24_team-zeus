@@ -4,10 +4,12 @@ import Why from "../components/Why";
 import CarouselSection from "../components/CarouselSection";
 import Services from "../components/Services";
 import StartYourJourney from "../components/StartYourJourney";
+import Header from "../components/Header";
 
 function Home() {
   return (
     <div>
+      <Header />
       <Hero />
       <Why />
       <CarouselSection />
