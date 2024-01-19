@@ -18,10 +18,11 @@ function Login() {
     };
     setLoading(true);
     axios
-      .post("http://localhost:5555/User/login", data)
-      .then(() => {
+      .post("http://localhost:5555/User/login", data, { withCredentials: true })
+      .then((data) => {
         setLoading(false);
         navigate("/dashboard");
+        console.log(data);
       })
       .catch((error) => {
         setLoading(false);
@@ -41,9 +42,11 @@ function Login() {
               </span>
               TravelBuddy
             </div>
-            {loading ? <Spinner /> : ''}
+            {loading ? <Spinner /> : ""}
             <div className="form">
-              <label className="text-gray-800 text-sm font-semibold">Email</label>
+              <label className="text-gray-800 text-sm font-semibold">
+                Email
+              </label>
               <input
                 className="w-full border-2 border-gray-800 rounded-md px-4 py-3 mt-1 text-xs"
                 type="email"
@@ -63,7 +66,9 @@ function Login() {
                 onChange={(e) => setPassword(e.target.value)}
                 required={true}
               />
-              <div className="text-xs mt-1 cursor-pointer">Forgot Password?</div>
+              <div className="text-xs mt-1 cursor-pointer">
+                Forgot Password?
+              </div>
               <button
                 className="w-full text-center bg-gray-900 cursor-pointer font-medium hover:bg-slate-600 text-white rounded-full px-4 py-3 mt-4 text-sm"
                 onClick={handleSubmit}
