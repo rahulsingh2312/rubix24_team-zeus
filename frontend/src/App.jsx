@@ -4,6 +4,7 @@ import MainLayout from "./layouts/MainLayout";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
 import Dashboard from "./pages/Dashboard";
+import Forum from "./pages/Forum";
 
 const router = createBrowserRouter([
   {
@@ -12,19 +13,23 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: <Home />
+        element: <Home />,
       },
       {
         path: "/login",
-        element: <Login />
+        element: <Login />,
       },
       {
         path: "/register",
-        element: <Register />
+        element: <Register />,
       },
       {
         path: "/dashboard",
-        element: <Dashboard />
+        element: <Dashboard />,
+      },
+      {
+        path: "/forum",
+        element: <Forum />,
       },
     ],
   },
