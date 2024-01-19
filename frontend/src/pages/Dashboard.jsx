@@ -4,7 +4,7 @@ import axios from "axios";
 import DashboardHeader from "../components/DashboardHeader";
 
 function Dashboard() {
-<<<<<<< HEAD
+
   const [username, setUsername] = useState("");
   const [loading, setLoading] = useState(false);
   useEffect(() => {
@@ -28,7 +28,7 @@ function Dashboard() {
       Welcome, {username}
     </div>
   );
-=======
+
     const [username, setUsername] = useState("");
     const [loading, setLoading] = useState(false);
     useEffect(() => {
@@ -52,7 +52,7 @@ function Dashboard() {
             {/* Welcome, {username} */}
         </div>
     )
->>>>>>> 92b1e718e794875028c4cf14eb91e8199d3acbdd
+
 }
 
 export default Dashboard;
